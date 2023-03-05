@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calorie counter</title>
+<link type="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <p><h4>Harris-Benedict Equation is one of the formulas that is most frequently used to determine how many calories an individual needs.</h4></p>
+        <p><h4>Based on a person's sex, weight, height, and age, the Harris-Benedict Equation calculates how many calories they need to maintain their current body weight.</h4></p>
+
+    <form>
+        <input type="radio" id="male" name="sex" value="Male">
+        <label for="male">male</label><br>
+        <input type="radio" id="female" name="sex" value="Female">
+        <label for="female">female</label><br>
+        <input type="radio" id="other" name="sex" value="other">
+        <label for="other">Other</label><br>
+
+
+        <label for="height">Height</label><br>
+        <input type="number" id="height" name="height" min="3"><br>
+        <label for="weight">Weight</label><br>
+        <input type="float" id="weight" name="weight" step="0.01"><br>
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+
+</html>
