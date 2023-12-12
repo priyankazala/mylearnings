@@ -11,5 +11,4 @@ Open [http://localhost:3000] to view.
 
 The page will reload when you make changes.\
 
-![Screenshot](Page 1.png)
 ![Screenshot](List.png)
