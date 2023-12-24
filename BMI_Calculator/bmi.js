@@ -1,11 +1,14 @@
 function BMICalculator(height,weight)
 {
+    if( height <= 55 || weight <=5){
+        return -1;
+    }
     let h= height/100;
     let sqHeight = h*h;
 
     let bmiValue = weight/sqHeight;
     let bmiValueRounded = bmiValue.toFixed(1);
-    
+    console.log(bmiValueRounded);
     return bmiValueRounded
 
 
@@ -18,10 +21,13 @@ let w = document.getElementById("weight").value
 //document.getElementById("weight").innerHTML = w;
 //console.log(h);
 //console.log(w);
+
 if(h!= "" && w!= ""){
 let result=BMICalculator(h,w);
-
-if(result<=18.5){
+if(result == -1){
+    document.getElementById("result").innerHTML ="Input correct values";
+}
+else if(result<=18.5){
     document.getElementById("result").innerHTML ="you are underweight";
     
     console.log("you are underweight");

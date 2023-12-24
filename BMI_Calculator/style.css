@@ -1,28 +1,52 @@
-body{
-    background:pink;
+body {
+    background: #b0c4b1; /* Light gray background */
     padding-top: 250px;
-}
-label{ 
-    color: rgba(0, 0, 0, 0.66) ;
-}
-div{
-    color: rgb(14, 12, 12);
-}
-h1{
-    text-align: center;
+    font-family: 'Comic Sans MS', cursive; /* Choose a playful font */
 }
 
-form{
-    margin: 0 auto; 
+label {
+    color: #dedbd2; /* Dark gray text color */
+    font-size: 18px; /* Increase font size for better readability */
+}
+
+div {
+    color: #eecbb8; /* Slightly darker text color */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px; /* Larger font size for the heading */
+    color: #333; /* Dark gray heading color */
+}
+
+form {
+    margin: 0 auto;
     height: auto;
-    width:250px;
+    width: 300px; /* Slightly wider form */
     text-align: center;
-    background-color: aliceblue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-   position: center fixed;
-   
-   
+    background-color: #4a5759; /* Light gray background */
+    padding: 20px; /* Add more padding for a softer look */
+    border-radius: 10px; /* Rounded corners for a cartoony feel */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
- 
+/* Add some hover effect to buttons */
+form button:hover {
+    background-color: #dedbd2; /* Dark gray background on hover */
+    color: #4a5759; /* White text on hover */
+    cursor: pointer;
+}
+
+/* Add some spacing between form elements */
+form input,
+form button {
+    margin-bottom: 10px;
+}
+
+/* Center the form on the page */
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
