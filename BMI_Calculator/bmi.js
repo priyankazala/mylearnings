@@ -10,8 +10,6 @@ function BMICalculator(height,weight)
     let bmiValueRounded = bmiValue.toFixed(1);
     console.log(bmiValueRounded);
     return bmiValueRounded
-
-
 };
 
 function calc(){
